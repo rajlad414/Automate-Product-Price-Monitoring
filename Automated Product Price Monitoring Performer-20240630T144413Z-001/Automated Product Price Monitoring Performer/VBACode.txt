@@ -1,0 +1,33 @@
+Public Function UpdateExcel(imagePath As String)
+  Range("A1").Select
+    ActiveSheet.Pictures.Insert( _
+        imagePath _
+        ).Select
+    Selection.ShapeRange.LockAspectRatio = msoFalse
+    Selection.ShapeRange.Height = 250
+    Selection.ShapeRange.Width = 185
+    Selection.ShapeRange.IncrementLeft 95
+    Selection.ShapeRange.IncrementTop 15
+
+  ActiveSheet.Range("B:B").WrapText = True
+  ActiveSheet.Columns("B").ColumnWidth = 80
+  ActiveSheet.Columns("A").ColumnWidth = 20
+  ActiveSheet.Range("A:A").Font.Bold = True
+  ActiveSheet.Range("A:B").HorizontalAlignment = xlLeft
+  ActiveSheet.Range("A:B").VerticalAlignment = xlTop
+  ActiveSheet.PageSetup.Zoom = False 
+  ActiveSheet.PageSetup.FitToPagesTall = 1 
+  ActiveSheet.PageSetup.FitToPagesWide = 1 
+  
+  Dim rowsToAutoFit As Range
+  Set rowsToAutoFit = Range("A19:A24")
+  rowsToAutoFit.Rows.AutoFit
+  
+  Dim tableRange As Range
+  Set tableRange = Range("A19:B24")
+  Range("A19:B24").Select
+    ActiveSheet.ListObjects.Add(xlSrcRange, Range("$A$19:$B$24"), , xlNo).Name = _
+        "Table3"
+    ActiveSheet.ListObjects("Table3").ShowHeaders = False
+	ActiveSheet.ListObjects("Table3").TableStyle = "TableStyleLight16"
+End Function

@@ -1,0 +1,81 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_OrchestratorQueue",
+      "DisplayName": "in_OrchestratorQueue",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "ProductsQueue",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_OrchestratorFolder",
+      "DisplayName": "in_OrchestratorFolder",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Automated Product Price Monitoring",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_FilePath",
+      "DisplayName": "in_FilePath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Data/Input/Product.xlsx",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_FileSheetName",
+      "DisplayName": "in_FileSheetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Sheet1",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_MailCredentials",
+      "DisplayName": "in_MailCredentials",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "MailCredentials",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_UserMail",
+      "DisplayName": "in_UserMail",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "3rajlad@gmail.com",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
